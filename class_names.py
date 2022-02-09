@@ -101,7 +101,17 @@ class_names = ['apple_pie',
                'waffles']
 
 
-def create_presentable_labels(class_names_):
+def create_presentable_labels(class_names_: list[str]) -> list[str]:
+    """
+        Takes list of class names and return modified list of labels modified for presentation purposes.
+        Function capitalises classes and change underscores into spaces.
+
+        Params:
+            class_names_ (list) - list of classes
+        Returns:
+            presentable_labels (list[str]) - list of labels
+
+    """
     presentable_labels = []
     for label in class_names_:
         label_arr = list(label)
